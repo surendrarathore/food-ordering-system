@@ -29,14 +29,12 @@ class OrderApplicationServiceImpl implements OrderApplicationService {
 
 	@Override
 	public CreateOrderResponse createOrder(@Valid CreateOrderCommand createOrderCommand) {
-		// TODO Auto-generated method stub
-		return null;
+		return orderCreateCommandHandler.createOrder(createOrderCommand);
 	}
 
 	@Override
 	public TrackOrderResponse trackOrder(@Valid TrackOrderQuery trackOrderQuery) {
-		// TODO Auto-generated method stub
-		return null;
+		return orderTrackCommandHandler.trackOrder(trackOrderQuery);
 	}
 
 }

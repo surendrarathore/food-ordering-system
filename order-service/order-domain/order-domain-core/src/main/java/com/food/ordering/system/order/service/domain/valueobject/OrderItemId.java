@@ -3,10 +3,7 @@ package com.food.ordering.system.order.service.domain.valueobject;
 import com.food.ordering.system.domain.valueobject.BaseId;
 
 public class OrderItemId extends BaseId<Long> {
-
-	public OrderItemId(Long value) {
-		super(value);
-		// TODO Auto-generated constructor stub
-	}
-
+    public OrderItemId(Long value) {
+        super(value);
+    }
 }

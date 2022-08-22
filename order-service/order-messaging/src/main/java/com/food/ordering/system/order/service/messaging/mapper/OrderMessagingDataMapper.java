@@ -75,7 +75,7 @@ public class OrderMessagingDataMapper {
                 .createdAt(paymentResponseAvroModel.getCreatedAt())
                 .paymentStatus(com.food.ordering.system.domain.valueobject.PaymentStatus.valueOf(
                         paymentResponseAvroModel.getPaymentStatus().name()))
-                .failureMessage(paymentResponseAvroModel.getFailureMessages())
+                .failureMessages(paymentResponseAvroModel.getFailureMessages())
                 .build();
     }
 

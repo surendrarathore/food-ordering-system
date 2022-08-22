@@ -42,7 +42,7 @@ public class OrderDataAccessMapper {
     }
 
     public Order orderEntityToOrder(OrderEntity orderEntity) {
-    	return Order.builder()
+        return Order.builder()
                 .orderId(new OrderId(orderEntity.getId()))
                 .customerId(new CustomerId(orderEntity.getCustomerId()))
                 .restaurantId(new RestaurantId(orderEntity.getRestaurantId()))

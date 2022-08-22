@@ -5,16 +5,18 @@
     <parent>
         <artifactId>food-ordering-system</artifactId>
         <groupId>com.food.ordering.system</groupId>
-        <version>0.0.1-SNAPSHOT</version>
+        <version>1.0-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>restaurant-service</artifactId>
+    <packaging>pom</packaging>
+    <modules>
+        <module>restaurant-domain</module>
+        <module>restaurant-container</module>
+        <module>restaurant-dataaccess</module>
+        <module>restaurant-messaging</module>
+    </modules>
 
-    <properties>
-        <maven.compiler.source>17</maven.compiler.source>
-        <maven.compiler.target>17</maven.compiler.target>
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    </properties>
 
 </project>

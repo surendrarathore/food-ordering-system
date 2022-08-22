@@ -5,16 +5,16 @@
     <parent>
         <artifactId>payment-service</artifactId>
         <groupId>com.food.ordering.system</groupId>
-        <version>0.0.1-SNAPSHOT</version>
+        <version>1.0-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>payment-domain</artifactId>
+    <packaging>pom</packaging>
+    <modules>
+        <module>payment-domain-core</module>
+        <module>payment-application-service</module>
+    </modules>
 
-    <properties>
-        <maven.compiler.source>17</maven.compiler.source>
-        <maven.compiler.target>17</maven.compiler.target>
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    </properties>
 
 </project>
